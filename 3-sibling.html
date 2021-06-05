@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* + น้องเท่านั้น */
+        /* ~ เหล่าน้องๆ */
+        p.first + p.after {
+            color: red;
+        }
+        img {
+            display: block;
+            margin: auto;
+        }
+        img + i {
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- div = parent -->
+    <div>
+        <!-- p = child -->
+        <!-- p, p, p, p = sibling -->
+        <p class="first">Paragraph 1</p>
+        <p class="after">Paragraph 2</p>
+        <p class="after">Paragraph 3</p>
+        <p class="after">Paragraph 4</p>
+    </div>
+
+    <img src="http://via.placeholder.com/150" alt="">
+    <i>Caption of image</i>
+
+    <p>Paragraph</p>
+    <p>Paragraph</p>
+    <p>Paragraph <i>This is italic</i></p>
+</body>
+</html>
